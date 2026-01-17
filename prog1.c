@@ -7,13 +7,14 @@
 int main() {
 	srand(time(NULL));
 
-	int n = rand() % 11;
+	int myrand = rand() % 11;
 	
-	if (0 <= n && n <= 4) {
+	if (0 <= myrand && myrand <= 4) {
 		printf("eat more beef, kick less cats.\n");	
-	} else if (5 <= n && n <= 9) {
+	} else if (5 <= myrand && myrand <= 9) {
 		printf("FRODO LIVES\n");	
-	} else if (n == 10) {
+	} else if (myrand == 10) {
 		printf("larn is the best roguelike\n");	
 	}
+        printf("The random number was: %d\n", myrand);
 }
