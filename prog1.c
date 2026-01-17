@@ -1,11 +1,19 @@
 #include <stdio.h> // Necessary for printf()
-
+#include <time.h>
+#include <stdlib.h>
 // TODO Other includes
 
 
 int main() {
-	// The main function is the entrypoint of the program. When the program
-	// is executed, it will automatically start here.
+	srand(time(NULL));
+
+	int n = rand() % 11;
 	
-	// TODO Complete the program
+	if (0 <= n && n <= 4) {
+		printf("eat more beef, kick less cats.\n");	
+	} else if (5 <= n && n <= 9) {
+		printf("FRODO LIVES\n");	
+	} else if (n == 10) {
+		printf("larn is the best roguelike\n");	
+	}
 }
